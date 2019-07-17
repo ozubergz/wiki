@@ -1,0 +1,160 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  transition: background-color .3s ease;
+}
+
+body.dark-mode {
+  background-color: #232323;
+}
+
+.logo {
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.form-group {
+  text-align: center;
+}
+
+.search-bar {
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  padding: 14px;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.search-bar:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(32, 33, 36, 0.28);
+}
+
+.search-bar:hover {
+  box-shadow: 0 0 10px rgba(32, 33, 36, 0.28);
+}
+
+.btn-group {
+  padding-top: 18px;
+}
+
+.btn {
+  margin: 11px 4px;
+  width: 120px;
+  padding: 9px;
+  border-radius: 4px;
+  border: 0;
+  background-color: rgb(248, 244, 244);
+  color: gray;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2px black;
+}
+
+.btn:active {
+  box-shadow: none;
+}
+
+.loader {
+  color: gray;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-style: 'Montserrat', sans-serif;
+}
+
+.lists {
+  padding: 10px;
+  margin-top:10px;
+  width: 97%;
+  background: rgba(199, 199, 199, 0.719);
+  border-radius: 10px;
+}
+
+.links {
+  text-decoration: none;
+  font-family: 'Arimo',sans-serif;
+  color: #2e2e2e;
+  font-weight: bold;
+}
+
+.infos {
+  font-family: 'Montserrat',
+  sans-serif;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.toggle-group {
+  position: absolute;
+  top: 20px;
+  left: 90%;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  font-weight: bold;
+}
+
+.toggle-btn:focus {
+  outline: none;
+}
+
+.toggle-checkbox {
+  width: 45px;
+  height: 20px;
+  background: #555;
+  position: relative;
+  border-radius: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  vertical-align: -8px;
+  outline: none;
+}
+
+.toggle-checkbox:checked {
+  background-color: #2196F3;
+  transition: background-color .8s ease;
+}
+
+.toggle-checkbox:checked + .slider {
+  transform: translateX(20px);
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: white;
+  top: 4px;
+  right: 58px;
+  transition: .4s;
+}

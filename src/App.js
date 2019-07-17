@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SearchBar from './containers/searchBar';
+import SearchList from './containers/searchList';
+import SwitchMode from './components/switchMode';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <SwitchMode />
+      <img alt="wiki_logo" className='logo' src={require("./svg/wiki-logo.svg")} />
+      <SearchBar />
+      <SearchList />
     </div>
   );
 }
